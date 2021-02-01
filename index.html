@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+        function is_pc(){
+    var os = new Array("Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS");
+    var info = navigator.userAgent;
+    var len = os.length;
+    for (var i = 0; i < len; i++) {
+        if (info.indexOf(os[i]) > 0){
+            return true;
+        }
+    }
+    return false;
+}
+// 检测是手机端
+if(is_pc()){
+ window.location ="./phone7/index.html";
+}else{
+window.location ="./pc.htm";
+}
+
+</script>
+    </head>
+    <body>
+
+    </body>
+</html>
